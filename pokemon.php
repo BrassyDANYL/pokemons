@@ -18,19 +18,13 @@
     <?php 
 
       $base = "https://pokeapi.co/api/v2/pokemon/";
-      $id = 20;
+      $id = 728;
       $data = file_get_contents($base.$id.'/');
       $pokemon = json_decode($data);
 
       ?>
 
-      <div class="img">
-
-     <?php
-      echo '<img src="'.$pokemon->sprites->front_default.'" width="200">';
-     ?>
-
-      </div>
+      
       
       <h1 class="name">
 
@@ -57,21 +51,35 @@
       <?php
     }
       ?>
-
-      <h4 class="stats">
       
+  <div class="under">
+    <div class="img">
+
+     <?php
+      echo '<img src="'.$pokemon -> sprites -> front_default.'" width="200">';
+     ?>
+
+      </div>
+      <div class="stats">
+        <h4>
       <?php
       echo $pokemon -> stats[0] -> stat -> name. '<br>'; 
       echo $pokemon -> stats[0] -> base_stat. '<br>';
-
+      ?>
+      </h4>
+      <h4>
+      <?php
       echo $pokemon -> stats[1] -> stat -> name. '<br>'; 
       echo $pokemon -> stats[1] -> base_stat. '<br>';  
-
+      ?>
+      </h4>
+      <h4>
+      <?php
       echo $pokemon -> stats[2] -> stat -> name. '<br>'; 
       echo $pokemon -> stats[2] -> base_stat. '<br>'; 
       ?>
-
-      </h4>
+</h4>
+  </div>
 
       <h4 class="current">Форма зараз:</h4>
       <h4 class="form">
@@ -95,28 +103,24 @@
       } 
       
       else {
-        echo '<h4>Це остання форма</h4>';
+        echo '<h4>Це остання форма. Перегляньте фото цього покемона:</h4><br>';
+        echo '<img class="bottom_img" src="'.$pokemon -> sprites -> front_default.'" width="50">';
       }
       ?>
+      </div>
       </div>
 <!--2-->
 <div class="pokemon">
-      <?php 
+    <?php 
 
       $base = "https://pokeapi.co/api/v2/pokemon/";
-      $id = 1;
+      $id = 25;
       $data = file_get_contents($base.$id.'/');
       $pokemon = json_decode($data);
 
       ?>
 
-      <div class="img">
-
-     <?php
-      echo '<img src="'.$pokemon->sprites->front_default.'" width="200">';
-     ?>
-
-      </div>
+      
       
       <h1 class="name">
 
@@ -143,21 +147,35 @@
       <?php
     }
       ?>
-
-      <h4 class="stats">
       
+  <div class="under">
+    <div class="img">
+
+     <?php
+      echo '<img src="'.$pokemon -> sprites -> front_default.'" width="200">';
+     ?>
+
+      </div>
+      <div class="stats">
+        <h4>
       <?php
       echo $pokemon -> stats[0] -> stat -> name. '<br>'; 
       echo $pokemon -> stats[0] -> base_stat. '<br>';
-
+      ?>
+      </h4>
+      <h4>
+      <?php
       echo $pokemon -> stats[1] -> stat -> name. '<br>'; 
       echo $pokemon -> stats[1] -> base_stat. '<br>';  
-
+      ?>
+      </h4>
+      <h4>
+      <?php
       echo $pokemon -> stats[2] -> stat -> name. '<br>'; 
       echo $pokemon -> stats[2] -> base_stat. '<br>'; 
       ?>
-
-      </h4>
+</h4>
+  </div>
 
       <h4 class="current">Форма зараз:</h4>
       <h4 class="form">
@@ -181,28 +199,24 @@
       } 
       
       else {
-        echo '<h4>Це остання форма</h4>';
+        echo '<h4>Це остання форма. Перегляньте фото цього покемона:</h4><br>';
+        echo '<img class="bottom_img" src="'.$pokemon -> sprites -> front_default.'" width="50">';
       }
       ?>
+      </div>
       </div>
 <!--3-->
-        <div class="pokemon">
-      <?php 
+    <div class="pokemon">
+    <?php 
 
       $base = "https://pokeapi.co/api/v2/pokemon/";
-      $id = 141;
+      $id = 24;
       $data = file_get_contents($base.$id.'/');
       $pokemon = json_decode($data);
 
       ?>
 
-      <div class="img">
-
-     <?php
-      echo '<img src="'.$pokemon->sprites->front_default.'" width="200">';
-     ?>
-
-      </div>
+      
       
       <h1 class="name">
 
@@ -229,21 +243,35 @@
       <?php
     }
       ?>
-
-      <h4 class="stats">
       
+  <div class="under">
+    <div class="img">
+
+     <?php
+      echo '<img src="'.$pokemon -> sprites -> front_default.'" width="200">';
+     ?>
+
+      </div>
+      <div class="stats">
+        <h4>
       <?php
       echo $pokemon -> stats[0] -> stat -> name. '<br>'; 
       echo $pokemon -> stats[0] -> base_stat. '<br>';
-
+      ?>
+      </h4>
+      <h4>
+      <?php
       echo $pokemon -> stats[1] -> stat -> name. '<br>'; 
       echo $pokemon -> stats[1] -> base_stat. '<br>';  
-
+      ?>
+      </h4>
+      <h4>
+      <?php
       echo $pokemon -> stats[2] -> stat -> name. '<br>'; 
       echo $pokemon -> stats[2] -> base_stat. '<br>'; 
       ?>
-
-      </h4>
+</h4>
+  </div>
 
       <h4 class="current">Форма зараз:</h4>
       <h4 class="form">
@@ -267,10 +295,12 @@
       } 
       
       else {
-        echo '<h4>Це остання форма</h4>';
+        echo '<h4>Це остання форма. Перегляньте фото цього покемона:</h4><br>';
+        echo '<img class="bottom_img" src="'.$pokemon -> sprites -> front_default.'" width="50">';
       }
       ?>
-</div>
+      </div>
+      </div>
     </div>
 </body>
 </html>
