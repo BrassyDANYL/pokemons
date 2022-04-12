@@ -93,18 +93,20 @@
       <h4 class="current">Наступна форма:</h4>
       <?php 
 
-      if($pokemon -> forms[$form+1] == elem){
+      if(empty($pokemon -> forms[$form+1])){
 
       ?>
       <?php
       
-      echo next($pokemon -> forms[$form] -> name);
+      echo '<h4>Це остання форма. Перегляньте фото цього покемона:</h4><br>';
+      echo '<img class="bottom_img" src="'.$pokemon -> sprites -> front_default.'" width="50">';
      
       } 
       
       else {
-        echo '<h4>Це остання форма. Перегляньте фото цього покемона:</h4><br>';
-        echo '<img class="bottom_img" src="'.$pokemon -> sprites -> front_default.'" width="50">';
+
+      echo next($pokemon -> forms[$form] -> name);
+        
       }
       ?>
       </div>
@@ -189,18 +191,20 @@
       <h4 class="current">Наступна форма:</h4>
       <?php 
 
-      if($pokemon -> forms[$form+1] == elem){
+      if(empty($pokemon -> forms[$form+1])){
 
       ?>
       <?php
       
-      echo next($pokemon -> forms[$form] -> name);
+        echo '<h4>Це остання форма. Перегляньте фото цього покемона:</h4><br>';
+        echo '<img class="bottom_img" src="'.$pokemon -> sprites -> front_default.'" width="50">';
      
       } 
       
       else {
-        echo '<h4>Це остання форма. Перегляньте фото цього покемона:</h4><br>';
-        echo '<img class="bottom_img" src="'.$pokemon -> sprites -> front_default.'" width="50">';
+
+      echo next($pokemon -> forms[$form] -> name);
+
       }
       ?>
       </div>
@@ -285,18 +289,18 @@
       <h4 class="current">Наступна форма:</h4>
       <?php 
 
-      if($pokemon -> forms[$form+1] == elem){
+      if(empty($pokemon -> forms[$form+1])){
 
       ?>
       <?php
       
-      echo next($pokemon -> forms[$form] -> name);
+      echo '<h4>Це остання форма. Перегляньте фото цього покемона:</h4><br>';
+      echo '<img class="bottom_img" src="'.$pokemon -> sprites -> front_default.'" width="50">';
      
       } 
       
       else {
-        echo '<h4>Це остання форма. Перегляньте фото цього покемона:</h4><br>';
-        echo '<img class="bottom_img" src="'.$pokemon -> sprites -> front_default.'" width="50">';
+      echo next($pokemon -> forms[$form] -> name);
       }
       ?>
       </div>
